@@ -10,41 +10,13 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
   </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1400, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-
-
-          });
-        } // End if
-      });
-    });
-  </script>
 
 
   <!-- Google Fonts -->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -67,17 +39,11 @@
 <header id="header">
   <div class="d-flex flex-column">
 
-    <style>
-      img {
-        border: 7px solid #ffffff;
-      }
-    </style>
-
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <button class="navbar-toggler collapsed" align="right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <span class="d-none d-lg-block"><img src="Images/pic.jpg" alt="" width="100%" height="auto" border="solid"></span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-square mx-auto mb-2" src="Images/pic.jpg" alt=""></span>
       </a>
 
       <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
@@ -91,20 +57,15 @@
       </div>
 
     </nav></div>
-</header><!-- End Header -->
+</header>
+<!-- End Header -->
 
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
   <div class="hero-container aos-init aos-animate" data-aos="fade-in">
     <h1>Hello, I'm Gunnar</h1>
-    <p><span class="typed" data-typed-items=" Developer, Software Engineer, Researcher ,Scientist, Roboticist"></span>
-      <span class="typed-cursor typed-cursor--blink">|</span>
-      <span class="typed-cursor typed-cursor--blink">|</span>
-      <span class="typed-cursor">|</span>
-      <span class="typed-cursor typed-cursor--blink">|</span>
-      <span class="typed-cursor typed-cursor--blink">|</span>
-      <span class="typed-cursor">|</span></p>
+    <p><span class="typed" data-typed-items=" Developer, Software Engineer, Researcher ,Scientist, Roboticist">Soft</span><span class="typed-cursor">|</span><span class="typed-cursor typed-cursor--blink">|</span><span class="typed-cursor">|</span><span class="typed-cursor typed-cursor--blink">|</span><span class="typed-cursor typed-cursor--blink">|</span><span class="typed-cursor">|</span></p>
   </div>
 </section><!-- End Hero -->
 
@@ -117,575 +78,574 @@
       <section class="resume-section">
         <div class="resume-section-content" align="center">
           <div class="section-title container">
-            <h1 class="mb-0" align="center">
-              Gunnar
-              <span class="text-primary">Beck Nelson</span>
-            </h1>
-            <p>
-            </p><h3 class="mb-0" align="center">
-            Developer -
-            <span class="text-primary">Software Engineer</span>
-            - Researcher -
-            <span class="text-primary">Scientist</span>
-            - Roboticist</h3>
-            <p></p>
+      <h1 class="mb-0" align="center">
+        Gunnar
+        <span class="text-primary">Beck Nelson</span>
+      </h1>
+      <p>
+      </p><h3 class="mb-0" align="center">
+      Developer -
+      <span class="text-primary">Software Engineer</span>
+      - Researcher -
+      <span class="text-primary">Scientist</span>
+      - Roboticist</h3>
+      <p></p>
 
 
-            <p>Hello everyone, my name is Gunnar, I am a motivated, high-energy, graduate student and software engineer, studying
-              <a class="a:link" href="https://cs.vt.edu/" target="_blank">Computer Science at Virginia Tech</a>
-              , who strives with independent thought, a hunger for knowledge, and generosity for others.</p>
+      <p>Hello everyone, my name is Gunnar, I am a motivated, high-energy, graduate student and software engineer, studying
+        <a class="a:link" href="https://cs.vt.edu/" target="_blank">Computer Science at Virginia Tech</a>
+        , who strives with independent thought, a hunger for knowledge, and generosity for others.</p>
 
-            <p> Currently I am a GRA for Virginia Tech's
+      <p> Currently I am a GRA for Virginia Tech's
 
-              <a class="a:link" href="https://trim.ise.vt.edu/" target="_blank">Mind Music Machine Lab</a>
+        <a class="a:link" href="https://trim.ise.vt.edu/" target="_blank">Mind Music Machine Lab</a>
 
-              and <a class="a:link" href="https://twitter.com/dvelab" target="_blank">Distributed Virtual Environments Lab </a>
+        and <a class="a:link" href="https://twitter.com/dvelab" target="_blank">Distributed Virtual Environments Lab </a>
 
-              studying Human-Robot Interaction, Human-Computer Interaction, and Artificial Intelligence. In my spare time I am a volunteer classroom assistant for STEM classrooms for local Title 1 Schools, teaching students concepts in Robotics and Artificial Intelligence. I strive for practical application of research and am always eager to help out whenever I can! </p>
+        studying Human-Robot Interaction, Human-Computer Interaction, and Artificial Intelligence. In my spare time I am a volunteer classroom assistant for STEM classrooms for local Title 1 Schools, teaching students concepts in Robotics and Artificial Intelligence. I strive for practical application of research and am always eager to help out whenever I can! </p>
 
-            <p></p>
+      <p></p>
             <p class="text-center"><a class="btn btn-primary" href="https://www.linkedin.com/in/gunnar-nelson-3878ba114/"><i class="fa fa-download"></i>Linked-In</a></p>
-            <p class="text-center"><a class="btn btn-primary" href="Images/Resume-Gunnar Beck Nelson.pdf"><i class="fa fa-download"></i> Download Snapshot Resume</a></p>
+      <p class="text-center"><a class="btn btn-primary" href="Images/Resume-Gunnar Beck Nelson.pdf"><i class="fa fa-download"></i> Download Resume</a></p>
 
-          </div>
-        </div></section>
-
-
-      <hr class="m-0">
-      <!-- ======= Portfolio Section ======= -->
-      <section id="Research Projects" class="portfolio section-bg">
-        <div class="container">
-          <section class="resume-section" id="projects">
-            <div class="resume-section-content" align="center">
-              <div class="section-title">
-                <h1>Projects
-                  <span class="text-primary">&amp; Publications</span>
-                </h1>
-                <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                  <p>My research and domain focuses on the intersecting fields of Artificial-Intelligence, Human-Robot Interaction, and Human-Computer Interaction. Primary focus on practical application. </p>
-                </div>
-
-                <style>
-                  * {
-                    box-sizing: border-box;
-                  }
-
-                  /* Center website */
-                  .main {
-                    max-width: 1000px;
-                    margin: auto;
-                  }
+    </div>
+  </div></section>
 
 
-                  .row {
-                    margin: 10px -16px;
-                  }
+  <hr class="m-0">
+  <!-- ======= Portfolio Section ======= -->
+  <section id="Research Projects" class="portfolio section-bg">
+    <div class="container">
+      <section class="resume-section" id="projects">
+        <div class="resume-section-content" align="center">
+          <div class="section-title">
+            <h1>Projects
+              <span class="text-primary">&amp; Publications</span>
+            </h1>
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <p>My research and domain focuses on the intersecting fields of Artificial-Intelligence, Human-Robot Interaction, and Human-Computer Interaction. Primary focus on practical application. </p>
+            </div>
 
-                  /* Add padding BETWEEN each column */
-                  .row,
-                  .row > .column {
-                    padding: 10px;
-                  }
+            <style>
+              * {
+                box-sizing: border-box;
+              }
 
-                  /* Create three equal columns that floats next to each other */
-                  .column {
-                    float: left;
-                    width: auto;
-                    display: none; /* Hide all elements by default */
-                    padding-bottom: 10px;
-                    padding-right: 10px;
-                  }
-
-                  /* Clear floats after rows */
-                  .row:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                  }
-
-                  /* Content */
-                  .content {
-                    background-color: #0061a6;
-                    padding: 10px;
-                  }
-
-                  /* The "show" class is added to the filtered elements */
-                  .show {
-                    display: block;
-                  }
-
-                  /* Style the buttons */
-                  .btn {
-                    border-style: solid;
-                    border-width: 5px;
-                    padding: 12px 16px;
-                    background-color: #2f60a7;
-                    cursor: pointer;
-                  }
-
-                  .btn:hover {
-                    background-color: #ddd;
-                  }
-
-                </style>
+              /* Center website */
+              .main {
+                max-width: 1000px;
+                margin: auto;
+              }
 
 
+              .row {
+                margin: 10px -16px;
+              }
 
-                <!-- MAIN (Center website) -->
+              /* Add padding BETWEEN each column */
+              .row,
+              .row > .column {
+                padding: 10px;
+              }
 
-                <div id="myBtnContainer" class="col-lg-12 d-flex justify-content-center">
-                  <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter" onclick="filterSelection('all')"> All</li>
-                    <li data-filter="*" class="filter" onclick="filterSelection('nature')"> Human Robot Interaction</li>
-                    <li data-filter="*" class="filter" onclick="filterSelection('cars')"> Human Computer Interaction</li>
-                    <li data-filter="*" class="filter" onclick="filterSelection('people')"> Artificial Intelligence </li>
-                  </ul></div>
+              /* Create three equal columns that floats next to each other */
+              .column {
+                float: left;
+                width: auto;
+                display: none; /* Hide all elements by default */
+                padding-bottom: 10px;
+                padding-right: 10px;
+              }
 
-                <style>
+              /* Clear floats after rows */
+              .row:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
 
-                  .content {
-                    padding: 4%;
-                    font-weight: 100;
-                    text-align: left;
-                    font-weight: bold;
-                  }
+              /* Content */
+              .content {
+                background-color: #0061a6;
+                padding: 10px;
+              }
 
-                  .content p
-                  {
-                    margin-top: 7%;
-                    line-height: 1.2em;
-                    font-weight: 500;
-                  }
+              /* The "show" class is added to the filtered elements */
+              .show {
+                display: block;
+              }
+
+              /* Style the buttons */
+              .btn {
+                border-style: solid;
+                border-width: 5px;
+                padding: 12px 16px;
+                background-color: #2f60a7;
+                cursor: pointer;
+              }
+
+              .btn:hover {
+                background-color: #ddd;
+              }
+
+            </style>
 
 
 
-                  .card-container {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-                    align-content: space-around;
-                    max-width: 496px;
-                    margin: 0 auto;
-                    padding: 9px;
-                  }
+            <!-- MAIN (Center website) -->
+
+            <div id="myBtnContainer" class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter" onclick="filterSelection('all')"> All</li>
+                <li data-filter="*" class="filter" onclick="filterSelection('nature')"> Human Robot Interaction</li>
+                <li data-filter="*" class="filter" onclick="filterSelection('cars')"> Human Computer Interaction</li>
+                <li data-filter="*" class="filter" onclick="filterSelection('people')"> Artificial Intelligence </li>
+            </ul></div>
+
+            <style>
+
+              .content {
+                padding: 4%;
+                font-weight: 100;
+                text-align: left;
+                font-weight: bold;
+              }
+
+              .content p
+              {
+                margin-top: 7%;
+                line-height: 1.2em;
+                font-weight: 500;
+              }
 
 
-                  .cards_item {
-                    display: flex;
-                    padding: 1rem;
-                  }
 
-                  @media (min-width: 40rem) {
-                    .cards_item {
-                      width: 50%;
-                    }
-                  }
-
-                  @media (min-width: 56rem) {
-                    .cards_item {
-                      width: 33.3333%;
-                    }
-                  }
-
-                  @-webkit-keyframes giro {
-                    from {
-                      transform: rotateY( 180deg);
-                    }
-                    to {
-                      transform: rotateY( 0deg);
-                    }
-                  }
-
-                  @keyframes giro {
-                    from {
-                      transform: rotateY( 180deg);
-                    }
-                    to {
-                      transform: rotateY( 0deg);
-                    }
-                  }
-
-                  @media screen and (max-width: 767px) {
-                    .cardBox {
-                      margin-left: 2.8%;
-                      margin-top: 3%;
-                      width: 46%;
-                    }
-                    .card {
-                      height: 285px;
-                    }
-                    .cardBox:last-child {
-                      margin-bottom: 3%;
-                    }
-                  }
-
-                  @media screen and (max-width: 480px) {
-                    .cardBox {
-                      width: 94.5%;
-                    }
-                    .card {
-                      height: 260px;
-                    }
-                  }
+              .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: space-around;
+                max-width: 496px;
+                margin: 0 auto;
+                padding: 9px;
+              }
 
 
-                  .flip-card {
-                    background-color: transparent;
-                    height: 300px;
-                    width: 300px;
-                    perspective: 1000px;
-                    transform-style: preserve-3d;
-                    transition: transform 0.4s ease 0s;
-                    -webkit-animation: giro 1s 1;
-                    animation: giro 1s 1;
-                    display: flex;
-                    flex-wrap: wrap;
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
+              .cards_item {
+                display: flex;
+                padding: 1rem;
+              }
 
-                  }
+              @media (min-width: 40rem) {
+                .cards_item {
+                  width: 50%;
+                }
+              }
 
-                  .btn {
-                    color: #FFFFFF;
-                    font-size: 20px;
-                    border-width: 3px;
-                    border-color: #343a40;
-                  }
+              @media (min-width: 56rem) {
+                .cards_item {
+                  width: 33.3333%;
+                }
+              }
 
-                  .flip-card img {
-                    border: 3px solid #fff;
-                    border-radius: 4px;
-                    padding: 5px;
-                    width: 150px;
-                    height: auto;
-                    max-width: 100%;
-                    vertical-align: middle;
-                  }
+              @-webkit-keyframes giro {
+                from {
+                  transform: rotateY( 180deg);
+                }
+                to {
+                  transform: rotateY( 0deg);
+                }
+              }
 
+              @keyframes giro {
+                from {
+                  transform: rotateY( 180deg);
+                }
+                to {
+                  transform: rotateY( 0deg);
+                }
+              }
 
-                  .flip-card-inner {
-                    border: 3px solid #fff;
-                    border-radius: 4px;
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-                    text-align: center;
-                    transition: transform 0.6s;
-                    transform-style: preserve-3d;
-                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                  }
+              @media screen and (max-width: 767px) {
+                .cardBox {
+                  margin-left: 2.8%;
+                  margin-top: 3%;
+                  width: 46%;
+                }
+                .card {
+                  height: 285px;
+                }
+                .cardBox:last-child {
+                  margin-bottom: 3%;
+                }
+              }
 
-                  .flip-card:hover .flip-card-inner {
-                    transform: rotateY(180deg);
-                  }
-
-                  .flip-card-front, .flip-card-back {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    -webkit-backface-visibility: hidden;
-                    backface-visibility: hidden;
-                  }
-
-                  .flip-card-front {
-                    background-color: #ffffff;
-                    color: black;
-                  }
-
-                  .flip-card-front h2 {
-                    background-color: #ffffff;
-                    border-style: solid;
-                    color: black;
-                  }
-
-                  .flip-card-back {
-                    background-color: #0061a6;
-                    color: white;
-                    transform: rotateY(180deg);
-                  }
-                </style>
+              @media screen and (max-width: 480px) {
+                .cardBox {
+                  width: 94.5%;
+                }
+                .card {
+                  height: 260px;
+                }
+              }
 
 
-                <div class="column nature show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/robo.jpg" alt="pepper" style="width:250px;">
-                        <h4 class="solid">Robot Sonification</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>In Virginia Tech's Mind Music Machine Lab, I am studying and synthesizing negative emotions to be expressed in humanoid robots.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://trim.ise.vt.edu/index/assistive-robotics-and-health-technologies.html"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
+              .flip-card {
+                background-color: transparent;
+                height: 300px;
+                width: 300px;
+                perspective: 1000px;
+                transform-style: preserve-3d;
+                transition: transform 0.4s ease 0s;
+                -webkit-animation: giro 1s 1;
+                animation: giro 1s 1;
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+              }
+
+              .btn {
+                color: #FFFFFF;
+                font-size: 20px;
+                border-width: 3px;
+                border-color: #343a40;
+              }
+
+              .flip-card img {
+                border: 3px solid #fff;
+                border-radius: 4px;
+                padding: 5px;
+                width: 150px;
+                height: auto;
+                max-width: 100%;
+                vertical-align: middle;
+              }
+
+
+              .flip-card-inner {
+                border: 3px solid #fff;
+                border-radius: 4px;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              }
+
+              .flip-card:hover .flip-card-inner {
+                transform: rotateY(180deg);
+              }
+
+              .flip-card-front, .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+              }
+
+              .flip-card-front {
+                background-color: #ffffff;
+                color: black;
+              }
+
+              .flip-card-front h2 {
+                background-color: #ffffff;
+                border-style: solid;
+                color: black;
+              }
+
+              .flip-card-back {
+                background-color: #0061a6;
+                color: white;
+                transform: rotateY(180deg);
+              }
+            </style>
+
+
+            <div class="column nature show">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="Images/robo.jpg" alt="pepper" style="width:250px;">
+                    <h4 class="solid">Robot Sonification</h4>
                   </div>
-                </div>
-                <div class="column nature show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/Theater.png" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Robot Theater</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>I teach undergraduates how to code humanoid robots to perform a theater performance, while showcasing our work to local Title 1 Schools in SW Virginia.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://trim.ise.vt.edu/index/assistive-robotics-and-health-technologies.html"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column nature show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/FRS.jpg" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Robotic Surgery Training</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>With the rise of robotic surgery there is a present learning curve with surgeons. A paradigm of my research focuses on decreasing the learning curve for robotic surgeons.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://github.com/GChief117/roboticsurgery"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="column people show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/IMG_1399.jpg" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Empathetic Robotics</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>Can commercial humanoid robots recognize emotions based on tonalities of speech in children? My thesis, based on my NSF GRFP proposal, uses AI to teach Pepper to recognize emotions based on speech.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="Images/Nelson_Graduate_Research_Plan.pdf"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column cars show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/virtualmusem.png" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">International Web-Based Virtual Museum</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>We, as a team of researchers and software engineers, are creating a web-based virtual museum for the Liberation War Museum in Dhaka, Bangladesh to present to students.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://arxiv.org/submit/3471713/view"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column cars show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/Computer(1).jpg" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Interactive Google AI</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>As part of the virtual museum project, I am responsible for constructing a 3D AI avatar integrated with Google Dialogueflow, which can converse with users to learn more about artifacts when exploring the museum.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://arxiv.org/submit/3471713/view"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column cars show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/RealEstate.png" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Real Estate Optimization</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>Utilizing machine learning tactics, with customized data analysis, real estate agents are equipped with knowledge of demographic of homes throughout their home state.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://github.com/GChief117/JupyterNotebookWork/blob/main/Housing%20Data%20Visualization.ipynb"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column people show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/RoboticSurgeryClass.png" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Robotic Surgery Image Classification</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>Machine Learning has been utilized to enhance accuracy for robotic surgery. For my accepted talk at 2021 JSES, I focus on increasing the accuracy of the Terasnet-11 architecture with the Hamlyn Center's 40,000 Robotic
-                            Surgery Image Dataset </p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://arxiv.org/submit/3474384/view"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column people show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/STEMtitle.PNG" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">AI/ROBOTICS CURRICULUM FOR TITLE 1 SCHOOLS</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>During COVID-19 I became a classroom assistant for a local Title 1 School to teach 3rd-5th graders about Artificial Intelligence and Robotics, in a hybrid setting, combining resources from the local university to showcase to students.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="Images/Robots%20and%20Coding%20Lesson%201.pptx"><i class="fa fa-download"></i> Checkout General Preview Lesson</a></p>
-                        </div>
-                      </div>
+                  <div class="flip-card-back">
+                    <div class="content">
+                      <p>In Virginia Tech's Mind Music Machine Lab, I am studying and synthesizing negative emotions to be expressed in humanoid robots.</p>
+                      <p class="text-center"><a class="btn btn-primary" href="https://trim.mtu.edu/research/"><i class="fa fa-download"></i> Learn More</a></p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- Portfolio Gallery Grid -->
-
-
+            </div>
+            <div class="column nature show">
+              <div class="flip-card">
+              <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Images/Theater.png" alt="pepper" style="width:250px;" height="202">
+                      <h4 class="solid">Robot Theater</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <div class="content">
+                      <p>I teach undergraduates how to code humanoid robots to perform a theater performance, while showcasing our work to local Title 1 Schools in SW Virginia.</p>
+                      <p class="text-center"><a class="btn btn-primary" href="https://trim.mtu.edu/research/"><i class="fa fa-download"></i> Learn More</a></p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
             </div>
 
+            <div class="column nature show">
+              <div class="flip-card">
+            <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Images/FRS.jpg" alt="pepper" style="width:250px;" height="202">
+                      <h4 class="solid">Robotic Surgery Training</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <div class="content">
+                      <p>With the rise of robotic surgery there is a present learning curve with surgeons. A paradigm of my research focuses on decreasing the learning curve for robotic surgeons.</p>
+                      <p class="text-center"><a class="btn btn-primary" href="https://github.com/GChief117/roboticsurgery"><i class="fa fa-download"></i> Learn More</a></p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              
+                </div>
+            <div class="column people show">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="Images/IMG_1399.jpg" alt="pepper" style="width:250px;" height="202">
+                    <h4 class="solid">Empathetic Robotics</h4>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="content">
+                      <p>Can commercial humanoid robots recognize emotions based on tonalities of speech in children? My thesis, based on my NSF GRFP proposal, uses AI to teach Pepper to recognize emotions based on speech.</p>
+                      <p class="text-center"><a class="btn btn-primary" href="Images/Nelson_Graduate_Research_Plan.pdf"><i class="fa fa-download"></i> Learn More</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="column cars show">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Images/virtualmusem.png" alt="pepper" style="width:250px;" height="202">
+                      <h4 class="solid">International Web-Based Virtual Museum</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <div class="content">
+                      <p>We, as a team of researchers and software engineers, are creating a web-based virtual museum for the Liberation War Museum in Dhaka, Bangladesh to present to students.</p>
+                      <p class="text-center"><a class="btn btn-primary" href="https://arxiv.org/submit/3471713/view"><i class="fa fa-download"></i> Learn More</a></p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="column cars show">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="Images/Computer(1).jpg" alt="pepper" style="width:250px;" height="202">
+                    <h4 class="solid">Interactive Google AI</h4>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="content">
+                      <p>A 3D AI avatar using Google Dialogueflow which can converse with users to learn more about artifacts when exploring the museum.</p>
+                      <p class="text-center"><a class="btn btn-primary" href="https://arxiv.org/submit/3471713/view"><i class="fa fa-download"></i> Learn More</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <!-- END MAIN -->
-          </section></div>
+              <div class="column cars show">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Images/RealEstate.png" alt="pepper" style="width:250px;" height="202">
+                      <h4 class="solid">Real Estate Optimization</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <div class="content">
+                      <p>Utilizing machine learning tactics, with customized data analysis, real estate agents are equipped with knowledge of demographic of homes throughout their home state</p>
+                      <p class="text-center"><a class="btn btn-primary" href="https://github.com/GChief117/JupyterNotebookWork/blob/main/Housing%20Data%20Visualization.ipynb"><i class="fa fa-download"></i> Learn More</a></p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column people show">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Images/RoboticSurgeryClass.png" alt="pepper" style="width:250px;" height="202">
+                      <h4 class="solid">Robotic Surgery Image Classification</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <div class="content">
+                      <p>To combat the learning curve, as robotic surgery is widely adopted, instances of image classification utilizing the UNET architecture have been implmented . For my talk at the 2021 JSES, I focus on increasing the accuracy using from Imperial College of Longon </p>
+                      <p class="text-center"><a class="btn btn-primary" href="https://arxiv.org/submit/3474384/view"><i class="fa fa-download"></i> Learn More</a></p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column people show">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Images/STEMtitle.PNG" alt="pepper" style="width:250px;" height="202">
+                      <h4 class="solid">AI/ROBOTICS CURRICULUM FOR TITLE 1 SCHOOLS</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <div class="content">
+                      <p>During COVID-19 I became a classroom assistant for a local Title 1 School to teach 3rd-5th graders about Artificial Intelligence and Robotics, in a hybrid setting, combining resources from the local university to showcase to students.</p>
+                      <p class="text-center"><a class="btn btn-primary" href="resume.pdf"><i class="fa fa-download"></i> Learn More</a></p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <script>
-          filterSelection("all")
-          function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("column");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-              w3RemoveClass(x[i], "show");
-              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
+            <!-- Portfolio Gallery Grid -->
+
+
+          </div>
+
+
+          <!-- END MAIN -->
+      </section></div>
+
+    <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
           }
+        }
+        element.className = arr1.join(" ");
+      }
+    </script>
 
-          function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-              if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-            }
-          }
+  </section>
+  <!-- End Portfolio Section -->
 
-          function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-              while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
-              }
-            }
-            element.className = arr1.join(" ");
-          }
-        </script>
-
-      </section>
-      <!-- End Portfolio Section -->
-
-      <hr class="m-0">
-      <!-- Skills-->
-      <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-          <h1 class="mb-3" align="center">Skills
-            <span class="text-primary">&amp; Tech I Use</span>
-          </h1>
-          <div class="subheading mb-3" align="center">Programming Languages &amp; Tools</div>
+  <hr class="m-0">
+  <!-- Skills-->
+  <section class="resume-section" id="skills">
+    <div class="resume-section-content">
+      <h1 class="mb-3" align="center">Skills
+        <span class="text-primary">&amp; Tech I Use</span>
+      </h1>
+      <div class="subheading mb-3" align="center">Programming Languages &amp; Tools</div>
 
 
-          <style>
-            .circle {
-              height: 475px;
-              width: 475px;
-              border-radius: 50%;
-              float: left;
-              shape-outside: circle();
-              margin: 3.13rem 1.88rem 2.5rem 0;
-            }
-          </style>
+      <style>
+        .circle {
+          height: 475px;
+          width: 475px;
+          border-radius: 50%;
+          float: left;
+          shape-outside: circle();
+          margin: 3.13rem 1.88rem 2.5rem 0;
+        }
+      </style>
 
-          <h4 class="container">
-            <img src="Images/circle-cropped.png" div="" class="circle">
-          </h4><h4 align="center"><span class="text-primary">Languages: </span>
+      <h4 class="container">
+        <img src="Images/circle-cropped.png" div="" class="circle">
+        </h4><h4 align="center"><span class="text-primary">Languages: </span>
           Python--Java--Koltin--Javascript</h4>
-          <h4><span class="text-primary">Environments </span></h4><p align="left"> Linux, Windows, and MacOS</p>
-          <h4> <span class="text-primary">Artificial Intelligence </span></h4>
-          <p>Google Tensorfow, Scikit-Learn, Google Could Services, including Google Dialogflow</p>
-          <h4><span class="text-primary">Web Development </span></h4>
+        <h4><span class="text-primary">Environments </span></h4><p align="left"> Linux, Windows, and MacOS</p>
+        <h4> <span class="text-primary">Artificial Intelligence </span></h4>
+        <p>Google Tensorfow, Scikit-Learn, Google Could Services, including Google Dialogflow</p>
+        <h4><span class="text-primary">Web Development </span></h4>
           <p>Bootstrap, HTML5, and Sass for CSS</p>
-          <h4><span class="text-primary">Virtual Reality </span></h4>
+        <h4><span class="text-primary">Virtual Reality </span></h4>
           <p>Unity, Unreal Engine, Hubs by Mozilla, and Google Virtual Tour Creator </p>
-          <h4><span class="text-primary">Robotics </span></h4>
+        <h4><span class="text-primary">Robotics </span></h4>
           <p>SoftBank-Robotic's Choreographe Suite and Android Studio for Pepper® humanoid robot </p>
-          <h4><span class="text-primary">App Development </span></h4>
+        <h4><span class="text-primary">App Development </span></h4>
           <p align="center">Cross-platform development for both Android and iOS using React.js library and Expo</p>
 
-        </div>
-      </section>
-      <!--End Skills-->
+      </div>
+  </section>
+  <!--End Skills-->
 
 
-      <hr class="m-0">
+  <hr class="m-0">
 
-      <!-- ======= Contact Section ======= -->
-      <section class="resume-section" id="letsconnect">
-        <div class="resume-section-content">
-          <h1>Let's Connect!</h1>
-          <p>If you need a frontend developer, software engineer, or want to collaborate for research, feel free to reach out! I am eager to help  out with whatever I can!</p>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/gunnar-nelson-3878ba114/" <="" a=""><img src="Images/linkedin-icon.png" height="51" width="51"></a>
-            <a href="https://twitter.com/Gunnar_B_Nelson" <="" a=""><img src="Images/twitter_circle_lightblue-512.webp" height="51" width="51"></a>
-            <a href="https://github.com/GChief117" <="" a=""><img src="Images/github_PNG70.png" height="51" width="51"></a>
-            <a href="https://arxiv.org/user/" <="" a=""><img src="Images/arXiv-bu.jpg" height="47" width="47"></a>
-          </div>
-        </div>
+  <!-- ======= Contact Section ======= -->
+  <section class="resume-section" id="letsconnect">
+    <div class="resume-section-content">
+      <h1>Let's Connect!</h1>
+      <p>If you need a frontend developer, software engineer, or want to collaborate for research, feel free to reach out! I am eager to help  out with whatever I can!</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/gunnar-nelson-3878ba114/" <="" a=""><img src="Images/linkedin-icon.png" height="51" width="51"></a>
+        <a href="https://twitter.com/Gunnar_B_Nelson" <="" a=""><img src="Images/twitter_circle_lightblue-512.webp" height="51" width="51"></a>
+        <a href="https://github.com/GChief117" <="" a=""><img src="Images/github_PNG70.png" height="51" width="51"></a>
+        <a href="https://arxiv.org/user/" <="" a=""><img src="Images/arXiv-bu.jpg" height="47" width="47"></a>
+      </div>
+    </div>
 
-        <div class="col-lg-5 d-flex align-items-stretch">
-          <div class="info">
-            <div class="address">
+    <div class="col-lg-5 d-flex align-items-stretch">
+      <div class="info">
+        <div class="address">
 
-              <h4 class="mb-3">Location:</h4>
-              <p>2202 Kraft Drive Blacksburg, VA 24060</p>
-            </div>
-
-            <div class="email">
-
-              <h4>Email:</h4>
-              <a></a><a href="mailto:ngunn15@vt.edu">ngunn15@vt.edu</a>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.058368248375!2d-80.41049655033842!3d37.198843052761035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884d94564b0bd9f9%3A0x4028931750c044f!2s2202%20Kraft%20Dr%20SW%2C%20Blacksburg%2C%20VA%2024060!5e0!3m2!1sen!2sus!4v1604415054219!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen="">></iframe>
-          </div>
-
+          <h4 class="mb-3">Location:</h4>
+          <p>2202 Kraft Drive Blacksburg, VA 24060</p>
         </div>
 
+        <div class="email">
+
+          <h4>Email:</h4>
+          <a></a><a href="mailto:ngunn15@vt.edu">ngunn15@vt.edu</a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.058368248375!2d-80.41049655033842!3d37.198843052761035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884d94564b0bd9f9%3A0x4028931750c044f!2s2202%20Kraft%20Dr%20SW%2C%20Blacksburg%2C%20VA%2024060!5e0!3m2!1sen!2sus!4v1604415054219!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen="">></iframe>
+      </div>
+
+    </div>
 
 
 
 
 
-      </section><!-- End Contact Section -->
 
-    </div></section></main><!-- End #main -->
+  </section><!-- End Contact Section -->
+
+</div></section></main><!-- End #main -->
 
 
 <a href="#" class="back-to-top" style="display: none;"><i class="icofont-simple-up"></i></a>
@@ -699,12 +659,29 @@
 <script src="assets/vendor/counterup/counterup.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/venobox/venobox.min.js"></script>
-
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 <script src="assets/vendor/typed.js/typed.min.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script><style type="text/css" data-typed-js-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style><style type="text/css" data-typed-js-css="true">
   .typed-cursor{
     opacity: 1;
   }
@@ -789,24 +766,6 @@
     50% { opacity: 0.0; }
     100% { opacity: 1; }
   }
-</style><style type="text/css" data-typed-js-css="true">
-  .typed-cursor{
-    opacity: 1;
-  }
-  .typed-cursor.typed-cursor--blink{
-    animation: typedjsBlink 0.7s infinite;
-    -webkit-animation: typedjsBlink 0.7s infinite;
-    animation: typedjsBlink 0.7s infinite;
-  }
-  @keyframes typedjsBlink{
-    50% { opacity: 0.0; }
-  }
-  @-webkit-keyframes typedjsBlink{
-    0% { opacity: 1; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1; }
-  }
-
 </style>
 
 </body></html>
