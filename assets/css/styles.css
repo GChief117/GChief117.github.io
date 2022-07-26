@@ -4415,8 +4415,8 @@ input[type=button].btn-block {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url('Images/wall.jpg') top center;
-  background-image: url('Images/wall.jpg');
+  background: url('Images/Roboarms.jpeg') top center;
+  background-image: url('Images/Roboarms.jpeg');
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
