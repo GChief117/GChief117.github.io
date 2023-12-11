@@ -30,6 +30,16 @@
             height: 20px; /* Adjust the size as needed */
             margin-right: 10px;
         }
+        .qualifications {
+            color: gray;          /* Makes text gray */
+            font-size: 0.8em;     /* Makes text smaller than the name */
+            width: 100%;          /* Ensures the span takes full width to center text correctly */
+        }
+        .name-container {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; /* This will center the items horizontally */
+        }
     </style>
 </head>
 <body>
@@ -38,7 +48,10 @@
         <a class="brand">
             <img src="brand.JPG" alt="Your Image">
         </a>
-        <a class="navbar-brand" href="#">Gunnar Beck Nelson</a>
+        <div class="name-container">
+            <a class="navbar-brand" href="#">Gunnar Beck Nelson</a>
+            <span class="qualifications">BS; MS; MRes</span>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
