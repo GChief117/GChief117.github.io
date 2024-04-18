@@ -35,6 +35,11 @@
             font-size: 0.8em;     /* Makes text smaller than the name */
             width: 100%;          /* Ensures the span takes full width to center text correctly */
         }
+        .disclaimer {
+            color: gray;          /* Makes text gray */
+            font-size: 0.4em;     /* Makes text smaller than the name */
+            width: 100%;          /* Ensures the span takes full width to center text correctly */
+        }
         .name-container {
             display: flex; 
             flex-direction: column; 
@@ -50,7 +55,8 @@
         </a>
         <div class="name-container">
             <a class="navbar-brand" href="#">Gunnar Beck Nelson</a>
-            <span class="qualifications">BS; MS; MRes</span>
+            <span class="qualifications">BS; MS; MRes; MSc*; DPhil*</span>
+            <span class="qualifications">*Enrolling Trinity 2024</span>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -87,21 +93,28 @@
         <section id="education">
             <h4>Education</h4>
             <ul>
+                <li><a class="imperial" href="https://www.ox.ac.uk">
+            <img src="oxford.png" alt="Oxford">
+        </a> The University of Oxford
+            <ul>
+                <li>MSc; DPhil-Computer Engineering</li>
+            </ul>
+            </ul>
+            <ul>
                 <li><a class="imperial" href="https://www.timeshighereducation.com/world-university-rankings/imperial-college-london">
             <img src="imperial.png" alt="Imperial">
         </a> Imperial College London
-                    <ul>
+            <ul>
                 <li>MRes-2024-Medical Robotics & Image Guided Intervention</li>
-                    </ul>
-                <li><a class="vt" href="https://www.usnews.com/best-colleges/virginia-tech-3754">
+            </ul>
+            <li><a class="vt" href="https://www.usnews.com/best-colleges/virginia-tech-3754">
             <img src="vt.png" alt="VT" >
         </a>Virginia Tech College of Engineering 
-                    <ul>
+                 <ul>
                 <li>BS-2019; MS-2022-Computer Science</li>
                 <li>Got introduced to VT through D1 recruitment wrestling</li>
                 <li>2x Hokie Grad</li>
-
-                    </ul>
+                </ul>
                 <!-- Add more list items as needed -->
             </ul>
         </section>
