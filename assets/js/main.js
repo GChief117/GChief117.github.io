@@ -2,17 +2,18 @@
   "use strict";
 
   // Hero typed
-  if ($('.typed').length) {
-    var typed_strings = $(".typed").data('typed-items');
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
+if ($('.typed').length) {
+  var typed_strings = $(".typed").data('typed-items');
+  typed_strings = typed_strings.split(','); // Split items by comma
+  new Typed('.typed', {
+    strings: typed_strings, // Pass the array of items
+    loop: true,             // Enable looping
+    typeSpeed: 100,         // Speed of typing
+    backSpeed: 50,          // Speed of deleting
+    backDelay: 2000         // Delay before typing the next string
+  });
+}
+
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .scrollto', function(e) {
