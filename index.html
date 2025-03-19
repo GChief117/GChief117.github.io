@@ -11,7 +11,63 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
   </style>
+  <style>
 
+
+.banner-section {
+    display: flex;
+    justify-content: space-around; /* Evenly distributes images */
+    align-items: flex-start; /* Aligns items to the top */
+    background-color: white;
+    gap: 20px; /* Adds spacing between images */
+    padding-bottom: 20px; /* Ensures space below the images */
+}
+
+.banner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the text under the images */
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%; /* Ensures images fill their container */
+    max-width: 350px; /* Adjust for uniform size */
+    height: auto; /* Allows images to scale dynamically */
+    object-fit: contain; /* Ensures full image is visible, no cropping */
+    border-radius: 10px; /* Keeps rounded corners */
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 8px; /* Adds space below the image */
+}
+
+.banner-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.banner-text {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    color: darkblue;
+    text-align: center; /* Centers the text */
+    margin-top: 0px; /* Remove extra margin on top */
+    display: block; /* Ensures proper alignment */
+    width: 100%; /* Keeps text centered relative to image */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .banner-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner-image {
+        width: 90%; /* Adjusts image width for mobile */
+        height: auto;
+    }
+}
+
+  </style>
 
   <!-- Google Fonts -->
 
@@ -108,6 +164,33 @@
           </div>
         </div>
       </section>
+
+      <!-- University Banner Section -->
+<section id="universities" class="banner-section">
+    <!-- Virginia Tech Engineering -->
+    <div class="banner-item">
+        <a href="https://eng.vt.edu/" target="_blank" class="banner-link">
+            <img src="virginiatech.jpg" alt="Virginia Tech Engineering" class="banner-image">
+        </a>
+        <p class="banner-text">Virginia Tech Engineering</p>
+    </div>
+
+    <!-- Imperial College London - Hamlyn Robotics Center -->
+    <div class="banner-item">
+        <a href="https://www.imperial.ac.uk/" target="_blank" class="banner-link">
+            <img src="imperial.jpg" alt="Imperial College London - Hamlyn Robotics Center" class="banner-image">
+        </a>
+        <p class="banner-text">Imperial College London</p>
+    </div>
+
+    <!-- University of Oxford Homepage -->
+    <div class="banner-item">
+        <a href="https://www.ox.ac.uk/" target="_blank" class="banner-link">
+            <img src="oxford.jpg" alt="University of Oxford" class="banner-image">
+        </a>
+        <p class="banner-text">University of Oxford</p>
+    </div>
+</section>
 
       <hr class="m-0">
       <!-- ======= Portfolio Section ======= -->
@@ -549,7 +632,7 @@ http://hdl.handle.net/10919/110894"><i class="fa fa-download"></i> Preview Thesi
                       <div class="flip-card-back">
                         <div class="content">
                           <p>As the TechLead for VAROS Technologies, I was responsible for spearheading the technical development, AR/United Dev, and operations for VAROS Tech. We acquired our first customer within one month of being onboarded.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://varostech.com/"><i class="fa fa-download"></i> Learn More</a></p>
+                          <p class="text-center"><a class="btn btn-primary" href="https://www.youtube.com/watch?v=d5Trq76RURE"><i class="fa fa-download"></i> Learn More</a></p>
                         </div>
                       </div>
                     </div>
@@ -573,38 +656,7 @@ http://hdl.handle.net/10919/110894"><i class="fa fa-download"></i> Preview Thesi
                 </div>
 
                 <!---Grid 2-->
-                <div class="column cars show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/UNET.png" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Synergy Lab-UNET Architecture</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>During my time with the Synergy Lab at Virginia Tech, in undergad, I learned abou the UNET Architecture and played around with such variations of it for the goal purposes of low cost CT Imaging. </p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://synergy.cs.vt.edu/"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column nature show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/CCI3.PNG" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Commonwealth Cyber Initiative</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>As part of my summer internship in 2021, I played around with the Microsoft Hololens, with blender files for healthcare applications utilizing virtual organs.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://www.youtube.com/watch?v=d5Trq76RURE"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="column cars show">
                   <div class="flip-card">
                     <div class="flip-card-inner">
@@ -642,38 +694,97 @@ http://hdl.handle.net/10919/110894"><i class="fa fa-download"></i> Preview Thesi
                     </div>
                   </div>
                 </div>
-                <div class="column cars show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/mobilenet.png" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Virginia Tech Cyberbiosecurity Initative</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>During my time with the Cyberbiosecuirty Initiative, I focused on low cost machine learning applications using the MobileNet architecture to detect piracy using mobile phones.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://caia.cals.vt.edu/cyberbiosecurity.html"><i class="fa fa-download"></i>Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column cars show">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="Images/RealEstate.png" alt="pepper" style="width:250px;" height="202">
-                        <h4 class="solid">Real Estate Machine Learning</h4>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="content">
-                          <p>As a side project for machine learning tactics, with customized data analysis, I have a breadth of experience in sci-kit learn and tensorflow packages in python.</p>
-                          <p class="text-center"><a class="btn btn-primary" href="https://github.com/GChief117/JupyterNotebookWork/blob/main/Housing%20Data%20Visualization.ipynb"><i class="fa fa-download"></i> Learn More</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+<!-- Computer Vision Course -->
+<div class="column cars show">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="Images/computervision.jpg" alt="Computer Vision Course" style="width:250px;" height="202">
+        <h4 class="solid">Computer Vision Course</h4>
+      </div>
+      <div class="flip-card-back">
+        <div class="content">
+          <p>This Computer Vision course covers fundamental and advanced concepts, including image processing, object detection, and neural network architectures.</p>
+          <p class="text-center"><a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLPERBdDHWLi1CN3p05Kf1YjVkpjW_Z6Pb"><i class="fa fa-download"></i> Watch Course</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blind 75 in C++ -->
+<div class="column nature show">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="Images/blind75.jpg" alt="Blind 75 in C++" style="width:250px;" height="202">
+        <h4 class="solid">Blind 75 in C++</h4>
+      </div>
+      <div class="flip-card-back">
+        <div class="content">
+          <p>A curated collection of 75 must-know coding problems in C++, designed to master problem-solving and data structures for interviews.</p>
+          <p class="text-center"><a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLPERBdDHWLi1x0ZxbnCd5t8yxEudSrxxH"><i class="fa fa-download"></i> Watch Course</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- XMARCUS II: Imperial College London Thesis -->
+<div class="column cars show">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="Images/imperial.jpg" alt="XMARCUS II Imperial College London Thesis" style="width:250px;" height="202">
+        <h4 class="solid">XMARCUS II: Imperial College London Thesis</h4>
+      </div>
+      <div class="flip-card-back">
+        <div class="content">
+          <p>A deep dive into AI-driven classification of in-vivo multimodal surgical anatomy, featured in my second master's thesis at Imperial College London.</p>
+          <p class="text-center"><a class="btn btn-primary" href="https://medium.com/@gchief117/how-i-made-artificial-intelligence-to-classify-in-vivo-multimodal-surgical-anatomy-my-second-master-d9d678ac3fa3"><i class="fa fa-download"></i> Read Thesis</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Deep Learning Course -->
+<div class="column cars show">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="Images/deeplearning.jpg" alt="Deep Learning Course" style="width:250px;" height="202">
+        <h4 class="solid">Deep Learning Course</h4>
+      </div>
+      <div class="flip-card-back">
+        <div class="content">
+          <p>An in-depth guide to deep learning principles, covering neural networks, backpropagation, convolutional networks, and advanced AI concepts.</p>
+          <p class="text-center"><a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLPERBdDHWLi0XbLt9pi0kkr_J6B45Brs3"><i class="fa fa-download"></i> Watch Course</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Large Language Model From Scratch -->
+<div class="column cars show">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="Images/largelanguage.jpg" alt="Large Language Model From Scratch" style="width:250px;" height="202">
+        <h4 class="solid">Large Language Model From Scratch</h4>
+      </div>
+      <div class="flip-card-back">
+        <div class="content">
+          <p>A comprehensive tutorial on building a Large Language Model from scratch, explaining transformers, tokenization, and training optimization.</p>
+          <p class="text-center"><a class="btn btn-primary" href="https://www.youtube.com/watch?v=Nyqn91Dnhh0&t=5s"><i class="fa fa-download"></i> Watch Tutorial</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
               <!-- Portfolio Gallery Grid -->
 
 
@@ -723,31 +834,30 @@ http://hdl.handle.net/10919/110894"><i class="fa fa-download"></i> Preview Thesi
 
       </section>
 
-      <!-- ======= Contact Section ======= -->
-      <section class="resume-section" id="letsconnect">
-        <div class="resume-section-content">
-          <h1 style="font-size:6vw;">Lets Connect</h1>
-          <p>If interested in connecting, feel free to reach out!</p>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/gunnar-beck-nelson-3878ba114/" <="" a=""><img src="Images/linkedin-icon.png" height="51" width="51"></a>
-            <a href="https://github.com/GChief117" <="" a=""><img src="Images/github_PNG70.png" height="51" width="51"></a>
-            <a href="https://scholar.google.com/citations?user=LS9zOpcAAAAJ&amp;hl=en&amp;oi=ao" <="" a=""><img src="Images/GS.png" height="51" width="51"></a>
-            <a href="https://www.youtube.com/@GChief117" <="" a=""><img src="Images/YT.png" height="51" width="51"></a>
-          </div>
-        </div>
+<!-- ======= Contact Section ======= -->
+<section class="resume-section" id="letsconnect">
+  <div class="resume-section-content">
+    <h1 style="font-size:6vw;">Let's Connect</h1>
+    <p>If interested in connecting, feel free to reach out!</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/gunnar-beck-nelson-3878ba114/"><img src="Images/linkedin-icon.png" height="51" width="51"></a>
+      <a href="https://github.com/GChief117"><img src="Images/github_PNG70.png" height="51" width="51"></a>
+      <a href="https://scholar.google.com/citations?user=LS9zOpcAAAAJ&amp;hl=en&amp;oi=ao"><img src="Images/GS.png" height="51" width="51"></a>
+      <a href="https://www.youtube.com/@GChief117"><img src="Images/YT.png" height="51" width="51"></a>
+      <a href="https://medium.com/@GChief117"><img src="Images/medium-icon.png" height="51" width="51"></a> <!-- Medium Icon Added -->
+    </div>
+  </div>
 
-        <div class="col-lg-5 d-flex align-items-stretch">
-          <div class="info">
-
-            <div class="email">
-
-              <h4>Email:</h4>
-              <a></a><a href="mailto:gunnarbecknelson@gmail.com">gunnarbecknelson@gmail.com</a>
-
-            </div>
-
-
-          </div></div></section><!-- End Contact Section -->
+  <div class="col-lg-5 d-flex align-items-stretch">
+    <div class="info">
+      <div class="email">
+        <h4>Email:</h4>
+        <a href="mailto:gunnarbecknelson@gmail.com">gunnarbecknelson@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact Section -->
 
     </div></section></main><!-- End #main -->
 
