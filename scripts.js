@@ -356,20 +356,21 @@ function initMasonry(gridId) {
   const grid = document.getElementById(gridId);
   if (!grid) return;
 
-  imagesLoaded(grid, () => {
-    // Destroy existing instance
-    if (masonryInstances[gridId]) {
-      masonryInstances[gridId].destroy();
-    }
-    
-    masonryInstances[gridId] = new Masonry(grid, {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-item',
-      percentPosition: true,
-      gutter: 20,
-      horizontalOrder: true // Ensures proper layout
-    });
+imagesLoaded(grid, () => {
+  // Destroy existing instance
+  if (masonryInstances[gridId]) {
+    masonryInstances[gridId].destroy();
+  }
+  
+  masonryInstances[gridId] = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item',
+    percentPosition: true,
+    gutter: 20,
+    horizontalOrder: true
   });
+});
+
 }
 
 // Create grid containers and populate them
@@ -428,20 +429,22 @@ function createCategoryGrids() {
 
 // Modified filter button handler
 function handleFilterClick(filterValue) {
-    document.querySelectorAll('.category-grid').forEach(grid => {
-        grid.style.display = 'none';
-    });
+  // Hide all grids
+  document.querySelectorAll('.category-grid').forEach(grid => {
+    grid.style.display = 'none';
+  });
 
-    const selectedGrid = document.getElementById(`grid-${filterValue}`);
-    if (selectedGrid) {
-        selectedGrid.style.display = 'block';
-        setTimeout(() => {
-            if (masonryInstances[`grid-${filterValue}`]) {
-                masonryInstances[`grid-${filterValue}`].layout(); // Force re-layout
-            }
-        }, 500);
+  // Show selected grid
+  const selectedGrid = document.getElementById(`grid-${filterValue}`);
+  if (selectedGrid) {
+    selectedGrid.style.display = 'block';
+    // Refresh Masonry layout
+    if (masonryInstances[`grid-${filterValue}`]) {
+      masonryInstances[`grid-${filterValue}`].layout();
     }
+  }
 }
+
 
 
 

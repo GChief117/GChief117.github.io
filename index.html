@@ -622,18 +622,13 @@ touch-action: none;
 
 /* Center grid container */
 #grids-container {
-  display: flex;
-  justify-content: center;
   width: 100%;
+  margin: 0 auto;
+  padding-left: 0; /* or remove altogether */
+  display: block;  /* remove flex, let Masonry handle layout */
 }
 
 
-
-/* Grid items */
-.category-grid {
-  width: 100%;
-  align-content: center; /* Center the grid items */
-}
 
 
 /* The Modal's background overlay */
@@ -896,14 +891,15 @@ text-align: left; /* Specifically keeps the description aligned left */
 
 
 .category-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: none;  /* hidden by default except the active one */
+  width: 90%;     /* or 100%, then Masonry will figure out column widths */
+  margin: 0 auto; /* center it */
+  position: relative; /* recommended for Masonry’s absolute positioning */
 }
-
-        /* Show active grid */
 .category-grid.active {
   display: block;
 }
+
 
 .grid-item {
   width: calc(33.333% - 20px); /* Adjust based on your layout */
