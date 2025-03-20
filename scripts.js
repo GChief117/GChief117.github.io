@@ -301,7 +301,7 @@ const projects = [
     img: 'pictures/renamed/28.jpg',
     title: 'Comprehensive Quantitative Finance',
     category: ['quantitative-finance'],
-    description: 'As part of my quantitative finance course I made, this project applies Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks for time-series prediction of forex markets. The system utilizes quantitative finance principles like GARCH volatility modeling and mean-reverting strategies, combined with Monte Carlo simulations to optimize trade execution, while also discussing the domain field as well of convertible bonds and business evaluation via Dun and Bradstreet.',
+    description: 'As part of my quantitative finance course I made, I go over quantitative finance principles, utilizing Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks for time-series prediction of forex markets, using GARCH volatility modeling, mean-reverting scalping strategies, combined with Monte Carlo simulations, to optimize trade execution.',
     link: 'https://www.youtube.com/playlist?list=PLPERBdDHWLi2XBsP5JBAxEhulnjmxyuV2'
   },
   {
