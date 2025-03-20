@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunnar Beck Nelson</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6+NJ2zYG8jM8K4rBWe8vSZv5kOamfLMpWZl0sqqXnsnXf0iDfrPzI3n+J5k76xNC1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <style>
+        @font-face {
+            font-family: 'BankGothic';
+            src: url('./BankGothicRegular.ttf') format('truetype');
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+/* Keep the Navbar Black */
+.navbar {
+  background-color: black !important;
+  padding: 15px;
+  border-bottom: 2px solid #444;
+}
+
+/* Name Text */
+.navbar-name {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 2px; /* Space between name and icons */
+}
+
+/* Keep Navbar Links in Bank Gothic */
+.navbar-nav .nav-link {
+  font-family: 'Times New Roman', sans-serif; /* Bank Gothic font */
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+
+/* Profile Image */
+.navbar-profile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Social Icons Container */
+.navbar-social-icons {
+  display: flex;
+  gap: 10px; /* Spacing between icons */
+}
+
+
+/* Hover Effect: Changes color to Aqua */
+.navbar-social-icons a:hover {
+  color: #00ffff; /* Aqua on hover */
+}
+
+
+/* Google Scholar Styling */
+.navbar-scholar {
+  font-size: 1.1rem; /* Adjust icon size */
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-scholar:hover {
+  color: #00ffff;
+}
+
+
+
+.signature-image {
+    width: 60%;  /* Adjust width to make it smaller */
+    max-width: 550px; /* Limits size */
+    height: auto; /* Keeps aspect ratio */
+    display: block; /* Prevents inline spacing issues */
+    filter: invert(1); /* Inverts black to white */
+    opacity: 0.9; /* Makes it look more natural */
+}
+
+        .about-section {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center; /* Center items vertically in the container */
+        justify-content: flex-end; /* Align items to end */
+    }
+
+    .banner-text {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    color: white;
+    text-align: center; /* Centers the text */
+    margin-top: 8px;
+    display: block; /* Ensures proper alignment */
+    width: 100%; /* Keeps text centered relative to image */
+}
+
+
+
+.banner-section {
+    display: flex;
+    justify-content: space-around; /* Evenly distributes images */
+    align-items: center;
+    padding: 20px 5%;
+    background-color: black;
+    gap: 20px; /* Adds spacing between images */
+}
+
+.banner-link {
+    display: flex; /* Ensures the link fills space properly */
+}
+
+.banner-image {
+    width: 100%; /* Ensures images fill their container */
+    max-width: 350px; /* Adjust this for uniform size */
+    height: auto; /* Allows images to scale dynamically */
+    object-fit: contain; /* Ensures full image is visible, no cropping */
+    border-radius: 10px; /* Keeps rounded corners */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.banner-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .banner-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner-image {
+        width: 90%; /* Adjusts image width for mobile */
+        height: auto;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Video Styles */
+.hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+    z-index: -2;
+}
+
+/* Right-Side Black Gradient Overlay */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0.95) 40%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 80%);
+    z-index: -2;
+}
+
+
+/* Left-Aligned Text Content */
+.text-container.left-aligned {
+    color: #fff;
+    max-width: 40%;
+    font-family: 'Times New Roman', serif;
+    text-align: left;
+    position: relative;
+    padding: 0 5%; /* Adds space for content */
+}
+
+.text-container h1 {
+        font-size: 6vw;
+}
+
+.image-stack {
+    position: relative;
+    width: 40%;      /* Set a fixed percentage for the right column */
+    height: 100%;    /* Ensure the container fills the hero section vertically */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+}
+
+.image-stack::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(180, 50, 50, 0.2); /* Lighter red tint */
+    mix-blend-mode: soft-light;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* Ensures images fill their container */
+.stack-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Makes sure images fill their section */
+    margin: 0; /* Removes unwanted gaps */
+}
+
+.contact h2 {
+    text-align: left;
+    padding: 50px;
+}
+
+/* LinkedIn Button */
+.linkedin-button {
+  display: inline-block;
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid white; /* White border */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.linkedin-button:hover {
+  background-color: white; /* Turns white on hover */
+  color: black; /* Black text on hover */
+}
+
+/* Resumé Link */
+.resume-link {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  color: white; /* White text */
+  transition: color 0.3s ease;
+}
+
+.resume-link:hover {
+  color: #ddd; /* Slightly lighter white on hover */
+}
+
+
+
+/* Mobile: Hide stacked images and center text */
+@media (max-width: 768px) {
+    .image-stack {
+        display: none;
+    }
+
+    .text-container h1 {
+        font-size: 7vw;
+}
+
+    .hero-section::before {
+        background: none !important; /* Removes gradient on mobile */
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .text-container.left-aligned {
+        max-width: 90%;
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    .signature-image {
+        margin-top: 15px;
+    }
+
+    /* Ensure smooth video transition */
+    .hero-section video {
+        opacity: 0.9; /* Keeps opacity level */
+        transition: opacity 1s ease-in-out;
+    }
+}
+
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .subtext-group {
+            margin: 0 auto; /* Center the block of text */
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #ccc;
+        }
+
+        /* White fade transition */
+#videoTransitionOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0;
+    z-index: 9999;
+    pointer-events: none;
+    transition: opacity 0.7s ease-in-out;
+}
+
+
+/* Center and Italicize Bullet Points */
+.center-text ul {
+    list-style-position: inside; /* Ensures bullets align with text */
+    text-align: center; /* Center-aligns the entire bullet list */
+    padding: 0;
+}
+
+.center-text ul li {
+    font-style: italic !important; /* Force italicization */
+    font-family: "Times New Roman", serif !important; /* Ensure correct font */
+    display: block; /* Each bullet takes full width */
+    margin: 5px 0; /* Adds spacing between bullet points */
+    text-align: center; /* Ensures individual bullet points are centered */
+    font-size: 2vw;       /* Adjust the viewport-based font size as needed */
+
+}
+
+ul.no-bullets {
+  list-style: none; /* Removes bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+ul.no-bullets li {
+  font-size: 2vw;       /* Adjust the viewport-based font size as needed */
+  text-decoration: underline;
+  font-style: italic;
+}
+
+
+
+
+/* Applies padding to all sections EXCEPT the hero section */
+section:not(.hero-section) {
+    padding: 80px 20px;
+    border-top: 2px solid #444;
+}
+
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify; /* Align text in a block format */
+            margin: 0 auto; /* Center the block of text */
+            max-width: 800px; /* Limit the width of the text block */
+            color: #ddd;
+        }
+
+        section h2 {
+            font-size: 7vw;
+        }
+
+        .center-text {
+            padding-top: 10px;
+            text-align: justify; /* Align text in a block format */
+            text-align: center; /* Center align specific text */
+            margin: 0 auto; /* Center the block of text */
+            font-size: 1.2rem; /* Optional: Adjust font size for readability */
+        }
+
+
+        footer {
+            background-color: black;
+            color: #ccc;
+            text-align: left;
+            padding: 10px 0;
+            font-size: 1rem;
+            border-top: 2px solid #444;
+            margin-top: auto;
+            padding-left: 20px;
+        }
+
+/* Styles for the pictures */
+picture {
+    position: relative;
+    height: 100vh;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+picture img {
+        /* Example: */
+    width: 100%;
+    height: auto;
+            object-fit: cover;
+        position: absolute; /* To position at the bottom of the <picture> */
+        bottom: 0;
+}
+
+
+    /* Place the button in the top-right corner, above everything else */
+    #carousel-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 9999;
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 4px;
+    }
+
+.drago-section {
+  height: 700px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #111;
+  -webkit-perspective: 1700px;
+          perspective: 1700px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#drag-container, #spin-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-10deg);
+          transform: rotateX(-10deg);
+touch-action: none;
+}
+
+/* 
+   1) Move the highlight/shadow to the <img> 
+   2) Keep margin for spacing 
+*/
+#spin-container a img {
+  display: block; 
+  width: 100%;
+  height: 100%;
+  margin: 5px; 
+  box-sizing: border-box;
+  /* Shadow + reflection on the image */
+  -webkit-box-shadow: 0 0 8px #fff;
+          box-shadow: 0 0 8px #fff;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+  transition: box-shadow 0.3s ease;
+}
+
+#spin-container a img:hover {
+  -webkit-box-shadow: 0 0 15px #fffd;
+          box-shadow: 0 0 15px #fffd;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+/* 
+   Remove shadow/reflection from anchor/video 
+   and reset text styles 
+*/
+#drag-container a, #drag-container video {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;  /* no extra vertical spacing */
+  font-size: 0;    /* no text size if not needed */
+  text-align: left;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-reflect: none;
+}
+
+/* Keep your existing p and ground styles as is */
+#drag-container p {
+  font-family: Serif;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
+          transform: translate(-50%,-50%) rotateX(90deg);
+  color: #fff;
+}
+
+#ground {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
+          transform: translate(-50%,-50%) rotateX(90deg);
+  background: -webkit-radial-gradient(center center, farthest-side, #9993, transparent);
+}
+
+
+
+@-webkit-keyframes spin {
+  from{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  } to{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  from{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  } to{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes spinRevert {
+  from{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  } to{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes spinRevert {
+  from{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  } to{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+
+/* Center the entire Masonry grid */
+#grid {
+  position: relative; /* required by Masonry’s absolute positioning */
+  width: 100%;
+  margin: 0 auto;    /* center horizontally */
+  display: flex;
+  justify-content: center; /* Center the grid horizontally */
+}
+
+/* Each grid-item is ~20% wide, minus 10px for gutter */
+.grid-item {
+  width: calc(20% - 10px);
+  box-sizing: border-box;
+}
+
+/* Ensure images fill their container and have a smooth hover transition */
+.grid-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  border: 2px solid #fff;      /* White border */
+  border-radius: 5px; 
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Center grid container */
+#grids-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 15%;
+}
+
+
+
+/* Grid items */
+.category-grid {
+  width: 100%;
+  align-content: center; /* Center the grid items */
+}
+
+
+/* The Modal's background overlay */
+.exhibit-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Sit on top of the page */
+  z-index: 9999;   /* Highest or near-highest so it overlays everything */
+  left: 0;
+  top: 0;
+  width: 100%;     /* Full width */
+  height: 100%;    /* Full height */
+  overflow: auto;  /* Enable scrolling if needed */
+  background-color: rgba(0,0,0,0.7); /* Semi-transparent black */
+}
+
+/* The Modal's background overlay */
+.exhibit-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;  /* Above everything */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;  /* Enable scroll if content is tall */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+}
+
+/* The modal content box */
+.modal-content {
+  position: relative;
+  margin: 5% auto; /* Center horizontally with margin from top */
+  background: #111; /* Dark background to match your site */
+  width: 80%;
+  max-width: 800px; /* Limit the max width */
+  padding: 20px;
+  border: 2px solid #444;
+  border-radius: 8px;
+}
+
+/* Close button (X) */
+.close-btn {
+  color: #fff;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #bbb;
+}
+
+/* Modal image styling */
+.modal-image {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto 20px; /* Center with spacing below */
+      padding-top: 10px;
+
+}
+
+.modal-title {
+  display: inline-block;
+  margin-top: 20px;  /* Optional: add top margin for spacing */
+  /* The rest of the styles remain the same */
+  background-color: black;
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block;
+  margin: auto;
+}
+
+/* Description text */
+.modal-description {
+text-align: left; /* Specifically keeps the description aligned left */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.modal-content {
+  text-align: center; /* This centers inline-block elements */
+}
+
+.modal-link {
+  display: inline-block;
+  margin-top: 20px;  /* Optional: add top margin for spacing */
+  /* The rest of the styles remain the same */
+  background-color: black;
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.modal-link:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px; /* Move it to the right */
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  padding-bottom: 20px;
+}
+
+.close-btn:hover {
+  color: #bbb;
+}
+
+
+
+/* Adjustments for mobile screens */
+@media (max-width: 1200px) {
+    picture img {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        margin-left: 15%;
+        position: absolute; /* To position at the bottom of the <picture> */
+        bottom: 0;
+    }
+
+    #about li {
+    max-width: 90%;   /* or a specific px value, e.g. 350px */
+    font-size: 1.5rem;  /* slightly smaller text on mobile */
+    line-height: 1.5; /* adjust spacing if needed */
+    margin: 0 auto;   /* center it within the section */
+  }
+
+  .drago-section {
+  height: 600px;
+}
+
+            .grid-item {
+                width: calc(50% - 10px);
+            }
+}
+
+
+/* Center the entire filter menu */
+#filter-menu {
+  text-align: center;
+  margin-bottom: 20px; /* Optional spacing below the filter menu */
+}
+
+/* Style the filter buttons to match the LinkedIn button style */
+.filter-btn {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid white; /* White border */
+  border-radius: 5px;
+  margin: 5px;            /* Spacing between buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: white; /* White background on hover */
+  color: black;            /* Black text on hover */
+}
+
+
+
+/************************************/
+/*  FLEX CONTAINER: Desktop Layout  */
+/************************************/
+.contact-flex-row {
+  display: flex;
+  justify-content: space-between; /* left col & right col */
+  align-items: flex-start;        /* top-aligned */
+  width: 70%;                     /* center container, adjust as needed */
+  margin: 0 auto;                 /* horizontally centered */
+  margin-top: 20px;               /* space above the row */
+}
+
+/* LEFT COLUMN */
+.left-col {
+  flex: 1;            /* occupies remaining space on the left */
+  margin-right: 20px; /* gap between columns */
+}
+
+/* "LET’S" heading (top line) */
+.lets-h1 {
+  margin: 0;
+  font-size: 7vw; /* adjust as needed */
+  padding: 0;
+}
+
+/* "CONNECT" heading (next line) */
+.connect-h1 {
+  margin: 0;
+  font-size: 6vw;
+  padding: 0;
+  margin-top: 5px; /* small gap from "LET’S" */
+}
+
+/* Paragraph directly under "CONNECT" */
+.connect-paragraph {
+  margin: 10px 0 0 0;  /* minimal spacing from the heading */
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Icons directly under paragraph */
+.social-icons {
+  margin-top: 10px; /* small gap above icons */
+}
+
+/* White icons, aqua hover */
+.social-icons a {
+  color: #ffffff;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #00ffff; /* aqua on hover */
+}
+
+/* For Google Scholar Material Icon */
+.scholar-icon {
+  font-size: 32px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.scholar-icon:hover {
+  color: #00ffff;
+}
+
+
+.category-grid {
+  display: none; /* Hidden by default */
+  width: 100%;
+}
+
+/* Show active grid */
+.category-grid.active {
+  display: block;
+}
+
+.grid-item { 
+  width: calc(20% - 10px);
+  margin-bottom: 20px;
+}
+
+/* White icons, aqua hover */
+.navbar-social-icons a {
+      font-size: 14px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  text-decoration: none;
+
+}
+.navbar-social-icons a:hover {
+  color: #00ffff; /* aqua on hover */
+}
+
+/* For Google Scholar Material Icon */
+.navbar-scholar-icon {
+    font-size: 20px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.navbar-scholar-icon:hover {
+  color: #00ffff;
+}
+
+
+
+/* RIGHT COLUMN: Email stuff */
+.right-col {
+  text-align: left; /* or right if you prefer */
+  flex-shrink: 0;   /* prevents it from shrinking too small */
+}
+
+/* Email label & link */
+.right-col h4 {
+  margin: 0;
+}
+.email-link {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.3rem; /* bigger text */
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.email-link:hover {
+  color: #00ffff; /* aqua on hover */
+}
+
+/************************************/
+/*    MOBILE LAYOUT (max-width)     */
+/************************************/
+@media (max-width: 768px) {
+  /* Stack columns: left-col first, then right-col */
+  .contact-flex-row {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  /* Full width for both columns */
+  .left-col,
+  .right-col {
+    width: 100%;
+    margin: 0 0 20px 0; /* spacing between them */
+  }
+
+  /* Adjust heading size if desired */
+  .lets-h1,
+  .connect-h1 {
+    font-size: 8vw; /* bigger text on mobile or keep as is */
+  }
+}
+
+
+
+
+    </style>
+</head>
+<div id="videoTransitionOverlay"></div>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+    <!-- Left Section: Profile + Name + Social Icons -->
+    <div class="d-flex align-items-center">
+      <!-- Profile Image -->
+      <img src="profile1.jpg" alt="Profile 1" class="navbar-profile me-2">
+      
+      <!-- Name + Social Icons (stacked) -->
+      <div class="d-flex flex-column">
+        <!-- Name -->
+        <span class="navbar-name">GUNNAR BECK NELSON</span>
+
+        <!-- Social Icons (directly below name) -->
+        <div class="navbar-social-icons d-flex justify-content-start">
+          <a href="https://www.youtube.com/@GChief117" target="_blank" class="me-2">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/gunnar-beck-nelson-3878ba114/" target="_blank" class="me-2">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/GChief117" target="_blank" class="me-2">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=LS9zOpcAAAAJ&hl=en&oi=ao" target="_blank" class="me-2 navbar-scholar">
+            Google Scholar
+          </a>
+          <a href="https://medium.com/@GChief117" target="_blank">
+            <i class="fab fa-medium"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section: Navbar Links -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#patents">PROJECTS & PUBLICATIONS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <video id="heroVideo" autoplay loop muted playsinline>
+        <source id="videoSource" src="ocean.mp4" type="video/mp4">
+    </video>
+
+    <!-- Left-Aligned Text Content -->
+    <div class="text-container left-aligned">
+        <h1>Built By Gunnar</h1>
+        <div class="subtext-group">
+            <img src="signature.png" alt="Signature" class="signature-image">
+        </div>
+    </div>
+
+    <!-- Right-Side Images (Stacked with No Gaps) -->
+    <div class="image-stack">
+        <img src="profile3.jpg" alt="Profile 2" class="stack-img">
+        <img src="profile2.jpg" alt="Profile 3" class="stack-img">
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="center-text">
+    <h2>ABOUT</h2>
+    <p>
+        Hello everyone, my name is Gunnar Beck Nelson (BS, MS, MRes, and currently Oxford bound). I am a motivated, high-energy engineer, academic, and researcher in academic medicine who strives with independent thought, a hunger for knowledge, and generosity for others. As an engineer, I focus on the following fields:
+    </p>
+    <ul>
+        <li><em><u>Software & Computer Engineering</li>
+        <li>Artificial Intelligence</li>
+        <li>Robotic Surgery</li>
+        <li>Computer Vision</li>
+        <li>Biomedical Engineering</li>
+        <li>Human Robot Interaction</li>
+        <li>Quantitative Finance</u></em></li>
+    </ul>
+    <p>
+        I am a degree educated engineer, who cares about the quality and output of work I do, which focus in deep tech, pushing the impact of whats possible, with feasible, scalable, high performing solutions. Feel free to prews my work and if interest please schedule a time to chat and can discuss inquries.
+    </p>
+    <p class="center-text">Thank you, Cheers-Gunnar Beck Nelson</p>
+
+        <!-- LinkedIn Button -->
+    <a href="https://linkedin.com/in/gchief117" target="_blank" class="linkedin-button">
+        Linked-In Profile
+    </a>
+
+    <!-- Resumé Download Link -->
+    <p class="center-text">
+        <a href="Nelson-CV-2025.pdf" class="resume-link" download>Download my Resumé</a>
+    </p>
+</section>
+
+
+
+<!--Banner Section-->
+<!-- University Banner Section -->
+<section id="universities" class="banner-section">
+    <!-- Virginia Tech Engineering -->
+    <div class="banner-item">
+        <a href="https://eng.vt.edu/" target="_blank" class="banner-link">
+            <img src="virginiatech.jpg" alt="Virginia Tech Engineering" class="banner-image">
+        </a>
+        <p class="banner-text">Virginia Tech Engineering</p>
+    </div>
+
+    <!-- Imperial College London - Hamlyn Robotics Center -->
+    <div class="banner-item">
+        <a href="https://www.imperial.ac.uk/" target="_blank" class="banner-link">
+            <img src="imperial.jpg" alt="Imperial College London - Hamlyn Robotics Center" class="banner-image">
+        </a>
+        <p class="banner-text">Imperial College London</p>
+    </div>
+
+    <!-- University of Oxford Homepage -->
+    <div class="banner-item">
+        <a href="https://www.ox.ac.uk/" target="_blank" class="banner-link">
+            <img src="oxford.jpg" alt="University of Oxford" class="banner-image">
+        </a>
+        <p class="banner-text">University of Oxford</p>
+    </div>
+</section>
+
+
+
+    <!-- Patents Section -->
+    <section id="patents">
+        <h2>PROJECTS, PUBLICATIONS, & PRESENTATIONS</h2>
+
+<div class="drago-section">
+<div id="drag-container">
+  <div id="spin-container">
+<a href="#"><img src="pictures/1.jpg"></a>
+<a href="#"><img src="pictures/2.jpg"></a>
+<a href="#"><img src="pictures/3.jpg"></a>
+<a href="#"><img src="pictures/4.jpg"></a>
+<a href="#"><img src="pictures/5.jpg"></a>
+<a href="#"><img src="pictures/6.jpg"></a>
+<a href="#"><img src="pictures/7.jpg"></a>
+<a href="#"><img src="pictures/8.jpg"></a>
+<a href="#"><img src="pictures/9.jpg"></a>
+<a href="#"><img src="pictures/10.jpg"></a>
+<a href="#"><img src="pictures/11.jpg"></a>
+<a href="#"><img src="pictures/12.jpg"></a>
+<a href="#"><img src="pictures/13.jpg"></a>
+<a href="#"><img src="pictures/14.jpg"></a>
+<a href="#"><img src="pictures/15.jpg"></a>
+<a href="#"><img src="pictures/16.jpg"></a>
+<a href="#"><img src="pictures/17.jpg"></a>
+<a href="#"><img src="pictures/18.jpg"></a>
+<a href="#"><img src="pictures/19.jpg"></a>
+<a href="#"><img src="pictures/20.jpg"></a>
+<a href="#"><img src="pictures/21.jpg"></a>
+<a href="#"><img src="pictures/22.jpg"></a>
+<a href="#"><img src="pictures/23.jpg"></a>
+<a href="#"><img src="pictures/24.jpg"></a>
+<a href="#"><img src="pictures/25.jpg"></a>
+<a href="#"><img src="pictures/26.jpg"></a>
+<a href="#"><img src="pictures/27.jpg"></a>
+<a href="#"><img src="pictures/28.jpg"></a>
+<a href="#"><img src="pictures/29.jpg"></a>
+<a href="#"><img src="pictures/30.jpg"></a>
+<a href="#"><img src="pictures/31.jpg"></a>
+<a href="#"><img src="pictures/32.jpg"></a>
+
+
+    <p>Gunnar Beck Nelson</p>
+
+  </div>
+  <div id="ground"></div>
+</div>
+<div id="music-container"></div>
+</div>
+
+
+
+  <!-- Example content below carousel (to test text highlighting) -->
+  <div style="padding: 20px;">
+<div id="filter-menu">
+  <button class="filter-btn" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="artificial-intelligence">AI</button>
+  <button class="filter-btn" data-filter="robotic-surgery">Robotic Surgery</button>
+  <button class="filter-btn" data-filter="human-robot-interaction">HRI</button>
+  <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+  <button class="filter-btn" data-filter="biomedical-engineering">Biomedical</button>
+  <button class="filter-btn" data-filter="software-and-computer-engineering">Software</button>
+  <button class="filter-btn" data-filter="quantitative-finance">Quantitative Finance</button>
+</div>
+
+  <div id="grids-container"></div>
+
+  </div>
+
+<!-- Custom "Exhibit" Modal (initially hidden) -->
+<div id="exhibitModal" class="exhibit-modal">
+  <div class="modal-content">
+    <!-- Close button (X) -->
+    <span id="modalClose" class="close-btn">&times;</span>
+    
+    <!-- NEW: Add a <h2> for the title -->
+    <h2 id="modalTitle" class="modal-title"></h2>
+    
+    <!-- Large image display -->
+    <img id="modalImage" class="modal-image" src="" alt="Exhibit Image">
+    
+    <!-- Description text -->
+    <p id="modalDescription" class="modal-description"></p>
+    
+    <!-- Link to more info -->
+    <a id="modalLink" class="modal-link" href="#" target="_blank">View Project</a>
+  </div>
+</div>
+
+    </section>
+
+<!-- ======= Contact Section ======= -->
+<section class="resume-section" id="contact">
+  <div class="resume-section-content">
+
+    <!-- 2-column layout: left has "LET’S", "CONNECT", paragraph, icons; right has email -->
+    <div class="contact-flex-row">
+      
+      <!-- Left Column -->
+      <div class="left-col">
+        <!-- Two separate lines for the headings -->
+        <h1 class="lets-h1">LET’S</h1>
+        <h1 class="connect-h1">CONNECT</h1>
+        
+        <!-- Paragraph & Icons directly beneath "CONNECT" -->
+        <p class="connect-paragraph">
+          If interested in connecting, feel free to reach out!
+        </p>
+        <div class="social-icons">
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/@GChief117" target="_blank">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/gunnar-beck-nelson-3878ba114/" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com/GChief117" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <!-- Google Scholar (Material Icons) -->
+          <a href="https://scholar.google.com/citations?user=LS9zOpcAAAAJ&hl=en&oi=ao" target="_blank">
+            <span class="material-icons-outlined scholar-icon">Google Scholar</span>
+          </a>
+          <!-- Medium -->
+          <a href="https://medium.com/@GChief117" target="_blank">
+            <i class="fab fa-medium fa-2x"></i>
+          </a>
+        </div>
+      </div> <!-- End .left-col -->
+      
+      <!-- Right Column (Email) -->
+      <div class="right-col">
+        <h4>Email:</h4>
+        <a href="mailto:gunnarbecknelson@gmail.com" class="email-link">
+          gunnarbecknelson@gmail.com
+        </a>
+      </div> <!-- End .right-col -->
+
+    </div> <!-- End .contact-flex-row -->
+  </div>
+</section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        © GUNNAR BECK NELSON 2025
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        console.log("Nelson Innovations loaded successfully.");
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="scripts.js"></script>
+
+
+</body>
+</html>
+
