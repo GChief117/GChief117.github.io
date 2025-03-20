@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6+NJ2zYG8jM8K4rBWe8vSZv5kOamfLMpWZl0sqqXnsnXf0iDfrPzI3n+J5k76xNC1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
     
     <style>
         @font-face {
@@ -622,7 +623,7 @@ touch-action: none;
 
 /* Center grid container */
 #grids-container {
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   padding-left: 0; /* or remove altogether */
   display: block;  /* remove flex, let Masonry handle layout */
@@ -789,6 +790,16 @@ text-align: left; /* Specifically keeps the description aligned left */
             .grid-item {
                 width: calc(50% - 10px);
             }
+}
+
+@media (max-width: 1400px) {
+                #grids-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0; /* or remove altogether */
+  display: block;  /* remove flex, let Masonry handle layout */
+}
+
 }
 
 
@@ -976,6 +987,10 @@ text-align: left; /* Specifically keeps the description aligned left */
   .connect-h1 {
     font-size: 8vw; /* bigger text on mobile or keep as is */
   }
+
+.drago-section {
+    display: none;
+  }
 }
 
 
@@ -1068,25 +1083,25 @@ text-align: left; /* Specifically keeps the description aligned left */
 <section id="about" class="center-text">
     <h2>ABOUT</h2>
     <p>
-        Hello everyone, my name is Gunnar Beck Nelson (BS, MS, MRes, and currently Oxford bound). I am a motivated, high-energy engineer, academic, and researcher in academic medicine who strives with independent thought, a hunger for knowledge, and generosity for others. As an engineer, I focus on the following fields:
+        Hello everyone, my name is Gunnar Beck Nelson (BS, MS, and MRes, and currently bound for Oxford)-engineer, academic, and researcher in academic medicine, driven by independent thought, and a commitment to helping others. My areas of expertise include:
     </p>
     <ul>
-        <li><em><u>Software & Computer Engineering</li>
-        <li>Artificial Intelligence</li>
-        <li>Robotic Surgery</li>
-        <li>Computer Vision</li>
-        <li>Biomedical Engineering</li>
-        <li>Human Robot Interaction</li>
-        <li>Quantitative Finance</u></em></li>
+        <li><em><u>Software & Computer Engineering</u></em></li>
+        <li><em><u>Artificial Intelligence</u></em></li>
+        <li><em><u>Robotic Surgery</u></em></li>
+        <li><em><u>Computer Vision</u></em></li>
+        <li><em><u>Biomedical Engineering</u></em></li>
+        <li><em><u>Human-Robot Interaction</u></em></li>
+        <li><em><u>Quantitative Finance</u></em></li>
     </ul>
     <p>
-        I am a degree educated engineer, who cares about the quality and output of work I do, which focus in deep tech, pushing the impact of whats possible, with feasible, scalable, high performing solutions. Feel free to peruse my work and if interested please schedule a time to chat and can discuss inquries.
+        As a degree-educated engineer, I am committed to delivering high-quality, innovative work which is scalable, high-performing, and impactful. Feel free to peruse my work, and if interested, please schedule a time to chat to discuss any inquiries. 
     </p>
-    <p class="center-text">Thank you, Cheers-Gunnar Beck Nelson</p>
+    <p class="center-text">Thank you,<br>Cheers-Gunnar Beck Nelson</p>
 
-        <!-- LinkedIn Button -->
+    <!-- LinkedIn Button -->
     <a href="https://linkedin.com/in/gchief117" target="_blank" class="linkedin-button">
-        Linked-In Profile
+        LinkedIn Profile
     </a>
 
     <!-- Resumé Download Link -->
@@ -1094,6 +1109,8 @@ text-align: left; /* Specifically keeps the description aligned left */
         <a href="Nelson-CV-2025.pdf" class="resume-link">Download my Resumé</a>
     </p>
 </section>
+
+
 
 
 
@@ -1292,6 +1309,9 @@ text-align: left; /* Specifically keeps the description aligned left */
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js"></script>
+    <script type="module" src="firebase.js"></script>
     <script src="scripts.js"></script>
 
 

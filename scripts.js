@@ -154,7 +154,7 @@ const projects = [
     img: 'pictures/renamed/7.jpg',
    title: 'AI For Robotic Surgery',
     category: ['robotic-surgery', 'biomedical-engineering'],
-    description: 'In this work I breakdown my master thesis explaining thee tech stack I used, and how I built my given computer vision models with hardware capabilities.',
+    description: 'In this work I breakdown my master thesis explaining the tech stack I used, and how I built my given computer vision models with hardware capabilities.',
     link: 'https://www.youtube.com/watch?v=2FdymjTwrMA&t'
   },
   {
@@ -594,5 +594,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector('.filter-btn[data-filter="all"]').click();
 });
-
 
