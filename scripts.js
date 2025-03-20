@@ -428,21 +428,21 @@ function createCategoryGrids() {
 
 // Modified filter button handler
 function handleFilterClick(filterValue) {
-  // Hide all grids
-  document.querySelectorAll('.category-grid').forEach(grid => {
-    grid.style.display = 'none';
-  });
+    document.querySelectorAll('.category-grid').forEach(grid => {
+        grid.style.display = 'none';
+    });
 
-  // Show selected grid
-  const selectedGrid = document.getElementById(`grid-${filterValue}`);
-  if (selectedGrid) {
-    selectedGrid.style.display = 'block';
-    // Refresh Masonry layout
-    if (masonryInstances[`grid-${filterValue}`]) {
-      masonryInstances[`grid-${filterValue}`].layout();
+    const selectedGrid = document.getElementById(`grid-${filterValue}`);
+    if (selectedGrid) {
+        selectedGrid.style.display = 'block';
+        setTimeout(() => {
+            if (masonryInstances[`grid-${filterValue}`]) {
+                masonryInstances[`grid-${filterValue}`].layout(); // Force re-layout
+            }
+        }, 500);
     }
-  }
 }
+
 
 
 
@@ -573,16 +573,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Update initialization code
-document.addEventListener("DOMContentLoaded", () => {
-  createCategoryGrids();
-  //updateFilterCounts(); // Initialize counts AFTER buttons exist
-  
-  document.querySelectorAll('.filter-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      handleFilterClick(button.dataset.filter);
-    });
-  });
+document.addEventListener("DOMContentLoaded", function () {
+    createCategoryGrids(); // Creates the grids
 
-  document.querySelector('.filter-btn[data-filter="all"]').click();
+    // Wait for images to load before initializing Masonry
+    setTimeout(() => {
+        Object.keys(masonryInstances).forEach(gridId => {
+            initMasonry(gridId);
+        });
+    }, 1000);
+
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            handleFilterClick(button.dataset.filter);
+        });
+    });
+
+    document.querySelector('.filter-btn[data-filter="all"]').click();
 });
+
 
