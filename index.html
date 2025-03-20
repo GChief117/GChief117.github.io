@@ -897,19 +897,21 @@ text-align: left; /* Specifically keeps the description aligned left */
 
 
 .category-grid {
-  display: none; /* Hidden by default */
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Show active grid */
+        /* Show active grid */
 .category-grid.active {
   display: block;
 }
 
-.grid-item { 
-  width: calc(20% - 10px);
-  margin-bottom: 20px;
+.grid-item {
+  width: calc(33.333% - 20px); /* Adjust based on your layout */
+  margin-bottom: 20px; /* Adds spacing between grid items */
+  box-sizing: border-box;
 }
+
 
 /* White icons, aqua hover */
 .navbar-social-icons a {
@@ -1287,15 +1289,15 @@ text-align: left; /* Specifically keeps the description aligned left */
     </script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 
 
 </body>
