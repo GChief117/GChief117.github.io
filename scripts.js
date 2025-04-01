@@ -342,7 +342,7 @@ const projects = [
   {
     img: 'pictures/renamed/34.jpg',
     title: 'How To Build an LLM From Scratch With No GPU in Under 15 Minutes',
-    category: ['software-and-computer-engineering'],
+    category: ['artificial-intelligence', 'software-and-computer-engineering'],
     description: 'A comprehensive tutorial on building a Large Language Model from scratch, explaining transformers, tokenization, and training optimization.',
     link: 'https://www.youtube.com/watch?v=Nyqn91Dnhh0&t=5s'
   }
